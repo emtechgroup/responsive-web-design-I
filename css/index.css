@@ -1,3 +1,403 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+.container {
+	width: 900px;
+	margin: auto;
+}
+
+@media screen and (max-width: 1800px) {
+header nav {
+	display: inline-block;
+	margin-top: 35px;
+}
+}
+@media screen and (max-width: 800px) {
+  header nav {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+  header {
+    display: -webkit-inline-box;
+}
+}
+
+@media screen and (max-width: 500px) {
+header {
+  display: block;
+}
+}
+@media screen and (max-width: 500px) {
+header nav {
+    display: inline-grid;
+    margin-top: 70px;
+    margin-left: 187px;
+}
+}
+
+header .logo {
+	margin-left: 140px;
+}
+
+@media screen and (max-width: 800px) {
+  header .logo {
+    margin-left: -407px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  header .logo {
+      margin-left: -153px;
+      padding: 0px 0px 25px 0px;
+  }
+}
+
+header nav a {
+    margin: 0 20px;
+    color: grey;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+header nav a {
+    margin: 0 30px;
+    color: grey;
+    text-decoration: none;
+}
+}
+
+@media screen and (max-width: 500px) {
+header nav a {
+    margin: 0 20px;
+    padding: 15px;
+    color: grey;
+    text-decoration: none;
+}
+}
+
+second {
+    display: -webkit-inline-box;
+	}
+
+h2 {
+	font-size: 65px;
+	weight: 700;
+	margin-top: 153px;
+}
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 65px;
+    weight: 700;
+    margin-top: 85px;
+    margin-left: 257px;
+}
+}
+
+@media screen and (max-width: 500px) {
+h2 {
+    font-size: 65px;
+    weight: 700;
+    margin-top: 49px;
+    margin-left: 114px;
+}
+}
+
+second img {
+	    margin-left: 240px;
+			margin-top: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  second img {
+    margin-left: 240px;
+    margin-top: 80px;
+    display: none;
+}
+}
+
+button {
+		width: 120px;
+    font-size: 12px;
+    color: grey;
+    border: 1px solid grey;
+		height: 25px;
+		margin-top: -40px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid grey;
+    margin: 1em 0;
+		margin-top: 40px;
+		margin-bottom: 25px
+    padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid grey;
+    margin: 1em 0;
+    margin-top: 40px;
+    margin-bottom: 25px padding: 0;
+    width: 84%;
+    margin-left: 21px;
+}
+}
+
+@media screen and (max-width: 500px) {
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid grey;
+    margin: 1em 0;
+    margin-top: 40px;
+    margin-bottom: 25px padding: 0;
+    width: 42%;
+    margin-left: 64px;
+}
+}
+
+third {
+	display: inline-block;
+	column-count: 2;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  third {
+    display: inline-block;
+    column-count: 2;
+    margin-bottom: 40px;
+    width: 81%;
+    margin-left: 37px;
+}
+}
 
 
+element.style {
+}
+@media screen and (max-width: 500px) {
+  third {
+    display: grid;
+    margin-bottom: 39px;
+    margin-left: 44px;
+    padding: 20px;
+    width: 45%;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .aboutsect {
+    margin-top: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .productsect {
+    margin-top: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .visionsect {
+    margin-top: 50px;
+}
+}
+
+fourth {
+	display: inline-block;
+	column-count: 3;
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+fourth {
+    display: inline-block;
+    column-count: 3;
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 87px;
+}
+}
+
+@media screen and (max-width: 500px) {
+fourth {
+  display: grid;
+  margin-bottom: 39px;
+  margin-left: 44px;
+  padding: 20px;
+  width: 45%;
+}
+}
+@media screen and (max-width: 800px) {
+.middle-img {
+    width: 82%;
+    margin-left: 28px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .middle-img {
+    width: 41%;
+    margin-left: 63px;
+    margin-top: -10px;
+}
+}
+
+.contact {
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+.contact {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.contact {
+    margin-top: 40px;
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.street {
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.street {
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.city {
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.city {
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.phone {
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.phone {
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.email {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.email {
+    margin-left: 65px;
+}
+}
+
+.copyright {
+	margin-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+.copyright {
+    margin-top: 60px;
+    margin-right: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.copyright {
+    margin-top: 60px;
+    margin-right: 403px;
+}
+}

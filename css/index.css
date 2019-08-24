@@ -76,17 +76,39 @@ header nav {
 	margin-top: 35px;
 }
 }
+@media screen and (max-width: 800px) {
+  header nav {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+}
 
+  header {
+    display: -webkit-inline-box;
+}
+}
+
+@media screen and (max-width: 500px) {
+header {
+  display: block;
+}
+}
 @media screen and (max-width: 500px) {
 header nav {
     display: inline-grid;
-    margin-top: 35px;
+    margin-top: 70px;
     margin-left: 187px;
 }
 }
 
 header .logo {
 	margin-left: 140px;
+}
+
+@media screen and (max-width: 800px) {
+  header .logo {
+    margin-left: -407px;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -100,6 +122,14 @@ header nav a {
     margin: 0 20px;
     color: grey;
     text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+header nav a {
+    margin: 0 30px;
+    color: grey;
+    text-decoration: none;
+}
 }
 
 @media screen and (max-width: 500px) {
@@ -121,9 +151,35 @@ h2 {
 	margin-top: 153px;
 }
 
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 65px;
+    weight: 700;
+    margin-top: 85px;
+    margin-left: 257px;
+}
+}
+
+@media screen and (max-width: 500px) {
+h2 {
+    font-size: 65px;
+    weight: 700;
+    margin-top: 49px;
+    margin-left: 114px;
+}
+}
+
 second img {
 	    margin-left: 240px;
 			margin-top: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  second img {
+    margin-left: 240px;
+    margin-top: 80px;
+    display: none;
+}
 }
 
 button {
@@ -146,10 +202,79 @@ hr {
     padding: 0;
 }
 
+@media screen and (max-width: 800px) {
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid grey;
+    margin: 1em 0;
+    margin-top: 40px;
+    margin-bottom: 25px padding: 0;
+    width: 84%;
+    margin-left: 21px;
+}
+}
+
+@media screen and (max-width: 500px) {
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid grey;
+    margin: 1em 0;
+    margin-top: 40px;
+    margin-bottom: 25px padding: 0;
+    width: 42%;
+    margin-left: 64px;
+}
+}
+
 third {
 	display: inline-block;
 	column-count: 2;
 	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  third {
+    display: inline-block;
+    column-count: 2;
+    margin-bottom: 40px;
+    width: 81%;
+    margin-left: 37px;
+}
+}
+
+
+element.style {
+}
+@media screen and (max-width: 500px) {
+  third {
+    display: grid;
+    margin-bottom: 39px;
+    margin-left: 44px;
+    padding: 20px;
+    width: 45%;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .aboutsect {
+    margin-top: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .productsect {
+    margin-top: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .visionsect {
+    margin-top: 50px;
+}
 }
 
 fourth {
@@ -158,10 +283,121 @@ fourth {
 	margin-top: 40px;
 }
 
+@media screen and (max-width: 800px) {
+fourth {
+    display: inline-block;
+    column-count: 3;
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 87px;
+}
+}
+
+@media screen and (max-width: 500px) {
+fourth {
+  display: grid;
+  margin-bottom: 39px;
+  margin-left: 44px;
+  padding: 20px;
+  width: 45%;
+}
+}
+@media screen and (max-width: 800px) {
+.middle-img {
+    width: 82%;
+    margin-left: 28px;
+}
+}
+
+@media screen and (max-width: 500px) {
+  .middle-img {
+    width: 41%;
+    margin-left: 63px;
+    margin-top: -10px;
+}
+}
+
 .contact {
 	margin-top: 40px;
 }
 
+@media screen and (max-width: 800px) {
+.contact {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.contact {
+    margin-top: 40px;
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.street {
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.street {
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.city {
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.city {
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.phone {
+    margin-left: 40px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.phone {
+    margin-left: 65px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.email {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.email {
+    margin-left: 65px;
+}
+}
+
 .copyright {
 	margin-top: 60px;
+}
+
+@media screen and (max-width: 800px) {
+.copyright {
+    margin-top: 60px;
+    margin-right: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.copyright {
+    margin-top: 60px;
+    margin-right: 403px;
+}
 }
